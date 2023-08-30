@@ -1,10 +1,12 @@
 package fib;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class FibonacciNumbers {
 
     private Map<Integer, Long> dictionary = new HashMap<>();
+
     public static void main(String[] args) {
         FibonacciNumbers fn = new FibonacciNumbers();
 
@@ -21,5 +23,15 @@ public class FibonacciNumbers {
         }
          return fib(x - 1) + fib( x - 2);
     }
-    private long memo
+    private long memo(int m) {
+    Long value = dictionary.get(m);
+
+        if (value != null) {
+        return value;
+    }
+
+    value = fib(m);
+        dictionary.put(Integer.valueOf(m), value);
+        return value;
+}
 }
