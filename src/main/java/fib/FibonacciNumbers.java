@@ -1,0 +1,25 @@
+package fib;
+
+import java.util.Map;
+
+public class FibonacciNumbers {
+
+    private Map<Integer, Long> dictionary = new HashMap<>();
+    public static void main(String[] args) {
+        FibonacciNumbers fn = new FibonacciNumbers();
+
+        for (int x = 0; x <= 50; x++) {
+            System.out.println(x + " : " + fn.fib(x));
+        }
+    }
+    private long fib(int x) {
+        if (x == 0) {
+            return 0L;
+        }
+        if (x == 1) {
+            return 1L;
+        }
+         return fib(x - 1) + fib( x - 2);
+    }
+    private long memo
+}
