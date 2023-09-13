@@ -9,6 +9,7 @@ public abstract class Animal implements Huntable {
     }
 
     protected Animal(String name) {
+
         this.name = name;
     }
 
@@ -19,10 +20,12 @@ public abstract class Animal implements Huntable {
     public abstract void makeSound();
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 }

@@ -20,7 +20,7 @@ public class Frog extends Amphibian{
 
     @Override
     public void hunt() {
-
+        System.out.println("Frog is being hunted");
     }
 
     @Override
