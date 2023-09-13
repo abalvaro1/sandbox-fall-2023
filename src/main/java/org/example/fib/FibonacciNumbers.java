@@ -1,4 +1,4 @@
-package fib;
+package org.example.fib;
 
 import java.util.HashMap;
 import java.util.Map;
