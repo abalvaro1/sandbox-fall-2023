@@ -7,10 +7,16 @@ public class Aggregation {
     private String name;
     private List<String> names;
     private String address;
+
     public Aggregation() {
-        this.address = "blah blah blah";
+        this.address = "blah blah blah";  // composition
     }
-    public Aggregation (Aggregation aggregation) {
-        this.aggregation = aggregation;
+
+    public Aggregation(String aggregation) {
+        this.name = aggregation;  // aggregation
+    }
+
+    public void setName(String name) {
+        names.add(name);  // aggregation
     }
 }
