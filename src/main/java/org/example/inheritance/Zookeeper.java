@@ -1,7 +1,9 @@
 package org.example.inheritance;
 
 public class Zookeeper {
+
     public static void main(String[] args) {
+
         Animal animal = new Frog();
         Animal animal2 = new Fish();
         Animal animal3 = new Frog("Fred");
@@ -19,6 +21,5 @@ public class Zookeeper {
 
         System.out.println(animal.getName());
         System.out.println(animal2.getName());
-
     }
 }
